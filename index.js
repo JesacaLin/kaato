@@ -1,4 +1,11 @@
-/*
-Challenge:
-Make it so that when you click the 'Add to cart' button, whatever is written in the input field should be console logged.
-*/
+const appSettings = {
+  databaseURL: "https://kaato-c9ad1-default-rtdb.firebaseio.com/",
+};
+
+const addButtonEl = document.querySelector("#add-button");
+const inputFieldEl = document.querySelector("#input-field");
+
+addButtonEl.addEventListener("click", () => {
+  let inputValue = inputFieldEl.value;
+  console.log(inputValue);
+});
